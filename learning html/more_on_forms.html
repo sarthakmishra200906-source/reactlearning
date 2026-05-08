@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Fitness form</h1>
+    <form action="/process.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Name" name="name" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" placeholder="Age" name="age" required><br><br>
+
+        <labelfor="phone">Phone:</label>
+            <input type="tel" id="phone" placeholder="phone" name="phone" required><br><br>
+
+            <lable for="password">Password:</label>
+                <input type="password" id="password" placeholder="Password" name="password" required><br><br>
+                <lable for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" placeholder="Confirm Password" name="confirm-password"
+                        required><br><br>
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other" required>
+                <label for="other">Other</label><br><br>
+                <p>Choose your hobbies:</p>
+                  <input type="checkbox" id="playing" name="playing" value="playing">
+                <label for="playing">Playing</label>
+                <input type="checkbox" id="reading" name="reading" value="reading">
+                <label for="reading">Reading</label>
+                <input type="checkbox" id="swimming" name="swimming" value="swimming">
+                <label for="swimming">Swimming</label>
+                <input type="checkbox" id="traveling" name="traveling" value="traveling">
+                <label for="traveling">Traveling</label><br><br>
+                <label for="city">City:</label>
+                <select id="city" name="city" required>
+                    <option value="select">Select a city</option>
+                    <option value="delhi">Delhi</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="bangalore">Bangalore</option>
+                    <option value="chennai">Chennai</option>
+                </select><br><br>
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" placeholder="Describe yourself in a few words..." rows="4" cols="50"></textarea><br><br>
+                <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
